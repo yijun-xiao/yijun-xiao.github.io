@@ -39,30 +39,40 @@
       </div>
     </div>
     <div class="papers">
-      <h1>2024</h1>
+      <h1>2023</h1>
       <div class="paper show-border highlight">
-        <div class="paper-badge">
-          <img src="/publications/xu2023patch.png" alt class="badge-image">
-          <abbr class="badge">WACV 2023</abbr>
-        </div>
         <div class="paper-content">
-          <p><b>Analysing the Factors in Shaping Neighbourhood Restaurants Sceneries</b></p>
-          <p> <b>Yijun Xiao</b>*, Sinan Yuan.</p>
+          <p><b>PatchZero: Defending against Adversarial Patch Attacks by Detecting and Zeroing the Patch</b></p>
+          <p>Ke Xu*, <b>Yijun Xiao</b>*, Sinan Yuan.</p>
           <i><p>International Conference of the Association for Computer-Aided Architectural Design Research in Asia (<b>CADDRIA</b>), 2024.</p></i>
-          <span>[<a shape="rect" class="toggle">Abstract</a>]</span>
-          <span>[<a href="https://papers.cumincad.org/data/works/att/caadria2024_176.pdf" target="_blank">Paper</a>]</span>
+          <span>
+            [<a href="javascript:void(0);" class="toggle-abstract">Abstract</a>]
+          </span>
+          <span>[<a href="https://openaccess.thecvf.com/content/WACV2023/papers/Xu_PatchZero_Defending_Against_Adversarial_Patch_Attacks_by_Detecting_and_Zeroing_WACV_2023_paper.pdf" target="_blank">Paper</a>]</span>
           <span>[<a shape="rect" class="toggle">Bibtex</a>]</span>
         </div>
-        <table bgcolor="#ace5f2" id="abs_PatchZero" style="display: none">
-          <tr>
-            <td>
-              <span>This study looks at neighborhood restaurants in Tianjin, China, during rapid urbanization and changing consumer preferences. It analyzes factors like demand, transportation, and competition, finding a significant rise in community restaurants from 2018 to 2021. Key influences include population density and housing prices.</span>
-            </td>
-          </tr>
-        </table>
+        <div class="abstract" style="display: none;">
+          <table bgcolor="#ace5f2">
+            <tr>
+              <td>
+                <span>We propose PatchZero, a task-agnostic defense that is compatible with multiple downstream models. Specifically, our defense detects the adversarial pixels and “zeros out” the patch region by repainting with mean pixel values. We formulate the patch detection problem as a semantic segmentation task such that our model can generalize to patches of any size and shape. We further design a two-stage adversarial training scheme to defend against the stronger adaptive attacks. Our method achieves state-of-the-art robust accuracy without any degrade in the benign performance.</span>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
 </main>
+
+<script>
+  document.querySelectorAll('.toggle-abstract').forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+      const abstract = this.closest('.paper-content').nextElementSibling;
+      abstract.style.display = abstract.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
+      
 Copyright © 2024
 <a href="https://yijun-xiao.github.io/" target="_blank" title="Yijun Xiao"><span style="color:#4693B8;">Yijun Xiao</span></a> <br><br>
