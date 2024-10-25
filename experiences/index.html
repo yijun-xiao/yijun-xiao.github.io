@@ -37,11 +37,35 @@
 </head>
 <body>
     <div id="app" data-server-rendered="true">
-        <main class="page">
-            <div class="theme-default-content content__default">
-                <p>This page is still under development.</p>
-            </div>
-        </main>
+        <div class="theme-container no-sidebar home-page">
+            <header class="navbar">
+                <div class="sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon">
+                        <path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                    </svg>
+                </div>
+                <a href="/" class="home-link router-link-exact-active router-link-active">
+                    <span class="site-name">Yijun Xiao</span>
+                </a>
+                <div class="links">
+                    <nav class="nav-links can-hide">
+                        <div class="nav-item"><a href="/" class="nav-link router-link-exact-active router-link-active">Home</a></div>
+                        <div class="nav-item"><a href="/publications/" class="nav-link">Publications</a></div>
+                        <div class="nav-item"><a href="/experiences/" class="nav-link">Experiences</a></div>
+                    </nav>
+                </div>
+            </header>
+            <main class="page">
+                <div class="theme-default-content content__default">
+                    <p>This page is still under development.</p>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2024 Yijun Xiao. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
     </div>
     
     <script src="/assets/js/app.7c280fda.js"></script>
